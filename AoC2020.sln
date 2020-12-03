@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC1", "AoC1\AoC1.csproj", "{037AD19D-975C-4F12-ABDB-033432F6EE9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC1", "AoC1\AoC1.csproj", "{037AD19D-975C-4F12-ABDB-033432F6EE9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC2", "AoC2\AoC2.csproj", "{ACF255C7-C3B5-4037-A601-F841379DFA19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC2", "AoC2\AoC2.csproj", "{ACF255C7-C3B5-4037-A601-F841379DFA19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC3", "AoC3\AoC3.csproj", "{5C5C8F8B-5C02-47F4-9B07-51E8A58BD084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC3", "AoC3\AoC3.csproj", "{5C5C8F8B-5C02-47F4-9B07-51E8A58BD084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC4", "AoC4\AoC4.csproj", "{5A117207-E883-433C-9B50-0F2D621252D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5C5C8F8B-5C02-47F4-9B07-51E8A58BD084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C5C8F8B-5C02-47F4-9B07-51E8A58BD084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C5C8F8B-5C02-47F4-9B07-51E8A58BD084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A117207-E883-433C-9B50-0F2D621252D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A117207-E883-433C-9B50-0F2D621252D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A117207-E883-433C-9B50-0F2D621252D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A117207-E883-433C-9B50-0F2D621252D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
