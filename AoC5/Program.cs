@@ -30,10 +30,7 @@ namespace AoC5
                     if (c == 'R') passColMin = Math.Ceiling(((passColMax - passColMin) / 2) + passColMin);
                 }
 
-                if (passRowMax == passRowMin && passColMax == passColMin)
-                {
-                    seatIds.Add( (passRowMax * 8) + passColMax);
-                }
+                seatIds.Add( (passRowMax * 8) + passColMax);
             }
 
             Console.WriteLine($"High seat id: {seatIds.Max()}");
