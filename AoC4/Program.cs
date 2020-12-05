@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AoC4.Business;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,7 +13,14 @@ namespace AoC4
     {
         static void Main(string[] args)
         {
+            IHost host = CreateHostBuilder(args).Build();
+
+            // read in file
             var rows = File.ReadAllText("input.txt").Split("\r\n\r\n").Select(x => x.Replace("\r\n", " ")).ToList();
+
+            // convert the raw data to poco
+
+            // send poco to "passport-scanned" queue
 
             var valid = 0;
             foreach(var row in rows)
@@ -89,5 +99,14 @@ namespace AoC4
 
             Console.WriteLine($"{valid}");
         }
+
+        static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureServices((_, services) =>
+                    services.AddTransient<ITransientOperation, DefaultOperation>()
+                            .AddScoped<IScopedOperation, DefaultOperation>()
+                            .AddSingleton<ISingletonOperation, DefaultOperation>()
+                            .AddTransient<BatchFormatter>());
     }
+
 }
