@@ -8,7 +8,7 @@ namespace AoC5
     {
         static void Main(string[] args)
         {
-            var seatIds = File.ReadAllText("input.txt").Split("\r\n").ToList().Select(GetSeatId).OrderBy(x => x).Select(x => Convert.ToInt32(x)).ToList();
+            var seatIds = File.ReadAllText("input.txt").Split("\r\n").ToList().Select(x => Convert.ToInt32(GetSeatId(x))).ToList();
             Console.WriteLine($"High seat id: {seatIds.Max()}");
 
             var missing = Enumerable.Range(seatIds.Min(), seatIds.Max()).Except(seatIds);
