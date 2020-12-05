@@ -8,7 +8,7 @@ namespace AoC5
     {
         static void Main(string[] args)
         {
-            var seatIds = File.ReadAllText("input.txt").Split("\r\n").ToList().Select(x => Convert.ToInt32(GetSeatId(x))).ToList();
+            var seatIds = File.ReadAllText("input.txt").Split("\r\n").ToList().Select(GetSeatId).ToList();
             Console.WriteLine($"High seat id: {seatIds.Max()}");
 
             var missing = Enumerable.Range(seatIds.Min(), seatIds.Max()).Except(seatIds);
@@ -16,7 +16,7 @@ namespace AoC5
             Console.WriteLine($"your seat: {yourSeat}");
         }
 
-        private static decimal GetSeatId(string pass)
+        private static int GetSeatId(string pass)
         {
             decimal passRowMin, passRowMax, passColMin, passColMax;
             passRowMin = passColMin = 0;
@@ -32,7 +32,7 @@ namespace AoC5
                 if (c == 'R') passColMin = Math.Ceiling(((passColMax - passColMin) / 2) + passColMin);
             }
 
-            return (passRowMax * 8) + passColMax;
+            return Convert.ToInt32((passRowMax * 8) + passColMax);
         }
     }
 }
