@@ -12,7 +12,7 @@ namespace AoC5
             Console.WriteLine($"High seat id: {seatIds.Max()}");
 
             var missing = Enumerable.Range(seatIds.Min(), seatIds.Max()).Except(seatIds);
-            var yourSeat = missing.Where(x => !missing.Contains(x - 1) && !missing.Contains(x + 1)).FirstOrDefault();
+            var yourSeat = missing.FirstOrDefault(x => !missing.Contains(x - 1) && !missing.Contains(x + 1));
             Console.WriteLine($"your seat: {yourSeat}");
         }
 
