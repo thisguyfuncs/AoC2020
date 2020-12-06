@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC3", "AoC3\AoC3.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC4", "AoC4\AoC4.csproj", "{5A117207-E883-433C-9B50-0F2D621252D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC5", "AoC5\AoC5.csproj", "{C17354C8-F603-49C9-B7B5-A2DF755CC4EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC5", "AoC5\AoC5.csproj", "{C17354C8-F603-49C9-B7B5-A2DF755CC4EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC4.Functions", "AoC4.Functions\AoC4.Functions.csproj", "{C02478B8-3CF4-45B6-AD01-73F5EF74B2BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC4.Functions", "AoC4.Functions\AoC4.Functions.csproj", "{C02478B8-3CF4-45B6-AD01-73F5EF74B2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC4.Models", "AoC4.Models\AoC4.Models.csproj", "{481C989C-F4E0-4D4E-A8C3-FF403C6C26FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC4.Models", "AoC4.Models\AoC4.Models.csproj", "{481C989C-F4E0-4D4E-A8C3-FF403C6C26FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC6", "AoC6\AoC6.csproj", "{D70B6A47-43E1-4C86-8A35-92CC15FB41B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{481C989C-F4E0-4D4E-A8C3-FF403C6C26FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{481C989C-F4E0-4D4E-A8C3-FF403C6C26FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{481C989C-F4E0-4D4E-A8C3-FF403C6C26FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70B6A47-43E1-4C86-8A35-92CC15FB41B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70B6A47-43E1-4C86-8A35-92CC15FB41B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70B6A47-43E1-4C86-8A35-92CC15FB41B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70B6A47-43E1-4C86-8A35-92CC15FB41B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
